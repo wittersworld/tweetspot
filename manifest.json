@@ -1,9 +1,10 @@
 {
     "name": "TweetSpot",
-    "description": "Tired of losing your place in your timeline when you load unread tweets?  This extension will let you load the new tweets, then scroll down to the exact spot in your timeline where you left off.",
-    "version": "0.0.1",
+    "description": "No more losing your place when you load new tweets! TweetSpot will scroll to the exact spot in your timeline where you left off.",
+    "version": "1.0.0",
     "manifest_version": 2,
     "icons": {
+        "48": "icon48.png",
         "128": "icon128.png"
     },
     "content_scripts": [
@@ -11,5 +12,8 @@
 	        "matches": ["http://*.twitter.com/*", "https://*.twitter.com/*"],
 	        "js": ["jquery-2.1.4.min.js", "tweetspot.js"]
 	    }
-	]
+	],
+    "author": "martin@wittersworld.com",
+    "short_name": "TweetSpot",
+    "homepage_url": "http://www.wittersworld.com/projects/tweetspot"
 }
